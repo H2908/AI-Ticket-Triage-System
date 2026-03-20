@@ -1,0 +1,28 @@
+{
+  "source": "HuggingFace \u2014 clinc/clinc_oos",
+  "categories": [
+    "billing",
+    "order_management",
+    "returns_refunds",
+    "account_access",
+    "technical_support",
+    "general_inquiry",
+    "urgent_escalation",
+    "feedback"
+  ],
+  "priority_map": {
+    "urgent_escalation": "P1",
+    "technical_support": "P2",
+    "account_access": "P2",
+    "billing": "P2",
+    "order_management": "P3",
+    "returns_refunds": "P3",
+    "general_inquiry": "P4",
+    "feedback": "P4"
+  },
+  "counts": {
+    "train": 1245,
+    "val": 240,
+    "test": 360
+  }
+}
