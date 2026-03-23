@@ -1,0 +1,13 @@
+2026-03-23 00:19:52,924 INFO    MainThread:43248 [wandb_setup.py:_flush():81] Current SDK version is 0.25.1
+2026-03-23 00:19:52,924 INFO    MainThread:43248 [wandb_setup.py:_flush():81] Configure stats pid to 43248
+2026-03-23 00:19:52,924 INFO    MainThread:43248 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-03-23 00:19:52,925 INFO    MainThread:43248 [wandb_init.py:setup_run_log_directory():717] Logging user logs to C:\Users\tanej\OneDrive\Desktop\AI-Ticket-Triage-System\wandb\run-20260323_001952-bnxfrd5q\logs\debug.log
+2026-03-23 00:19:52,925 INFO    MainThread:43248 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to C:\Users\tanej\OneDrive\Desktop\AI-Ticket-Triage-System\wandb\run-20260323_001952-bnxfrd5q\logs\debug-internal.log
+2026-03-23 00:19:52,925 INFO    MainThread:43248 [wandb_init.py:init():844] calling init triggers
+2026-03-23 00:19:52,926 INFO    MainThread:43248 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'model': 'mistralai/Mistral-7B-Instruct-v0.2', 'epochs': 3, 'batch_size': 4, 'lr': 0.0002, 'lora_r': 16, 'lora_alpha': 32, 'use_4bit': True, 'max_seq_len': 512, '_wandb': {}}
+2026-03-23 00:19:52,926 INFO    MainThread:43248 [wandb_init.py:init():892] starting backend
+2026-03-23 00:19:55,245 INFO    MainThread:43248 [wandb_init.py:init():895] sending inform_init request
+2026-03-23 00:19:55,298 INFO    MainThread:43248 [wandb_init.py:init():903] backend started and connected
+2026-03-23 00:19:55,301 INFO    MainThread:43248 [wandb_init.py:init():973] updated telemetry
+2026-03-23 00:19:55,353 INFO    MainThread:43248 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout

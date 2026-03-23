@@ -1,0 +1,78 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            0j9src7t6ue04k6xpo5i06szh0p18t24:
+                codePath: training\train.py
+                codePathLocal: training\train.py
+                cpu_count: 14
+                cpu_count_logical: 18
+                disk:
+                    /:
+                        total: "490292113408"
+                        used: "206665711616"
+                email: tanejaharshit79@gmail.com
+                executable: C:\Users\tanej\anaconda3\python.exe
+                git:
+                    commit: 15227b2ff2480dd880c4482541b1d18a2534c747
+                    remote: https://github.com/H2908/AI-Ticket-Triage-System.git
+                host: Harshit
+                memory:
+                    total: "16597598208"
+                os: Windows-11-10.0.26200-SP0
+                program: c:\Users\tanej\OneDrive\Desktop\AI-Ticket-Triage-System\training\train.py
+                python: CPython 3.13.5
+                root: C:\Users\tanej\OneDrive\Desktop\AI-Ticket-Triage-System
+                startedAt: "2026-03-23T00:27:35.604611Z"
+                writerId: 0j9src7t6ue04k6xpo5i06szh0p18t24
+        m: []
+        python_version: 3.13.5
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 49
+                - 51
+                - 53
+                - 71
+                - 84
+                - 98
+                - 105
+            "2":
+                - 1
+                - 5
+                - 11
+                - 49
+                - 51
+                - 53
+                - 71
+                - 84
+                - 98
+                - 105
+            "3":
+                - 13
+                - 16
+            "4": 3.13.5
+            "5": 0.25.1
+            "6": 5.3.0
+            "8":
+                - 3
+            "12": 0.25.1
+            "13": windows-amd64
+batch_size:
+    value: 4
+epochs:
+    value: 3
+lora_alpha:
+    value: 32
+lora_r:
+    value: 16
+lr:
+    value: 0.0002
+max_seq_len:
+    value: 512
+model:
+    value: mistralai/Mistral-7B-Instruct-v0.2
+use_4bit:
+    value: true

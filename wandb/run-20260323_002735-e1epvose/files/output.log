@@ -1,0 +1,103 @@
+2026/03/23 00:27:41 INFO mlflow.store.db.utils: Creating initial MLflow database tables...
+2026/03/23 00:27:41 INFO mlflow.store.db.utils: Updating database tables
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Context impl SQLiteImpl.
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Will assume non-transactional DDL.
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade  -> 451aebb31d03, add metric step
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade 451aebb31d03 -> 90e64c465722, migrate user column to tags
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade 90e64c465722 -> 181f10493468, allow nulls for metric values
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade 181f10493468 -> df50e92ffc5e, Add Experiment Tags Table
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade df50e92ffc5e -> 7ac759974ad8, Update run tags with larger limit
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade 7ac759974ad8 -> 89d4b8295536, create latest metrics table
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade 89d4b8295536 -> 2b4d017a5e9b, add model registry tables to db
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade 2b4d017a5e9b -> cfd24bdc0731, Update run status constraint with killed
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade cfd24bdc0731 -> 0a8213491aaa, drop_duplicate_killed_constraint
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade 0a8213491aaa -> 728d730b5ebd, add registered model tags table
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade 728d730b5ebd -> 27a6a02d2cf1, add model version tags table
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade 27a6a02d2cf1 -> 84291f40a231, add run_link to model_version
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade 84291f40a231 -> a8c4a736bde6, allow nulls for run_id
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade a8c4a736bde6 -> 39d1c3be5f05, add_is_nan_constraint_for_metrics_tables_if_necessary
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade 39d1c3be5f05 -> c48cb773bb87, reset_default_value_for_is_nan_in_metrics_table_for_mysql
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade c48cb773bb87 -> bd07f7e963c5, create index on run_uuid
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade bd07f7e963c5 -> 0c779009ac13, add deleted_time field to runs table
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade 0c779009ac13 -> cc1f77228345, change param value length to 500
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade cc1f77228345 -> 97727af70f4d, Add creation_time and last_update_time to experiments table
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade 97727af70f4d -> 3500859a5d39, Add Model Aliases table
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade 3500859a5d39 -> 7f2a7d5fae7d, add datasets inputs input_tags tables
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade 7f2a7d5fae7d -> 2d6e25af4d3e, increase max param val length from 500 to 8000
+2026/03/23 00:27:41 INFO alembic.runtime.migration: Running upgrade 2d6e25af4d3e -> acf3f17fdcc7, add storage location field to model versions
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade acf3f17fdcc7 -> 867495a8f9d4, add trace tables
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade 867495a8f9d4 -> 5b0e9adcef9c, add cascade deletion to trace tables foreign keys
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade 5b0e9adcef9c -> 4465047574b1, increase max dataset schema size
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade 4465047574b1 -> f5a4f2784254, increase run tag value limit to 8000
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade f5a4f2784254 -> 0584bdc529eb, add cascading deletion to datasets from experiments
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade 0584bdc529eb -> 400f98739977, add logged model tables
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade 400f98739977 -> 6953534de441, add step to inputs table
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade 6953534de441 -> bda7b8c39065, increase_model_version_tag_value_limit
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade bda7b8c39065 -> cbc13b556ace, add V3 trace schema columns
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade cbc13b556ace -> 770bee3ae1dd, add assessments table
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade 770bee3ae1dd -> a1b2c3d4e5f6, add spans table
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade a1b2c3d4e5f6 -> de4033877273, create entity_associations table
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade de4033877273 -> 1a0cddfcaa16, Add webhooks and webhook_events tables
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade 1a0cddfcaa16 -> 534353b11cbc, add scorer tables
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade 534353b11cbc -> 71994744cf8e, add evaluation datasets
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade 71994744cf8e -> 3da73c924c2f, add outputs to dataset record
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade 3da73c924c2f -> bf29a5ff90ea, add jobs table
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade bf29a5ff90ea -> 1bd49d398cd23, add secrets tables
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade 1bd49d398cd23 -> b7c8d9e0f1a2, add trace metrics table
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade b7c8d9e0f1a2 -> 5d2d30f0abce, update job table
+2026/03/23 00:27:42 INFO alembic.runtime.migration: Running upgrade 5d2d30f0abce -> c9d4e5f6a7b8, add routing strategy to endpoints and linkage type to mappings
+2026/03/23 00:27:43 INFO alembic.runtime.migration: Running upgrade c9d4e5f6a7b8 -> 2c33131f4dae, add online_scoring_configs table
+2026/03/23 00:27:43 INFO alembic.runtime.migration: Running upgrade 2c33131f4dae -> d3e4f5a6b7c8, add display_name to endpoint_bindings
+2026/03/23 00:27:43 INFO alembic.runtime.migration: Context impl SQLiteImpl.
+2026/03/23 00:27:43 INFO alembic.runtime.migration: Will assume non-transactional DDL.
+2026/03/23 00:27:43 INFO mlflow.tracking.fluent: Experiment with name 'ticket-triage-ai' does not exist. Creating a new experiment.
+[32m2026-03-23 00:27:44.221[0m | [1mINFO    [0m | [36m__main__[0m:[36mtrain[0m:[36m105[0m - [1mLoading Tokeniser.........[0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+config.json: 100%|████████| 596/596 [00:00<00:00, 824kB/s]
+C:\Users\tanej\anaconda3\Lib\site-packages\huggingface_hub\file_download.py:129: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\tanej\.cache\huggingface\hub\models--mistralai--Mistral-7B-Instruct-v0.2. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+tokenizer_config.json: 2.10kB [00:00, 1.84MB/s]
+tokenizer.json: 1.80MB [00:00, 7.87MB/s]
+tokenizer.model: 100%|██| 493k/493k [00:01<00:00, 404kB/s]
+special_tokens_map.json: 100%|█| 414/414 [00:00<00:00, 635
+[32m2026-03-23 00:27:48.385[0m | [1mINFO    [0m | [36m__main__[0m:[36mtrain[0m:[36m111[0m - [1mLoading Model....[0m
+`torch_dtype` is deprecated! Use `dtype` instead!
+Traceback (most recent call last):
+  File "c:\Users\tanej\OneDrive\Desktop\AI-Ticket-Triage-System\training\train.py", line 216, in <module>
+    train(**vars(args))
+    ~~~~~^^^^^^^^^^^^^^
+  File "c:\Users\tanej\OneDrive\Desktop\AI-Ticket-Triage-System\training\train.py", line 113, in train
+    model=AutoModelForCausalLM.from_pretrained(
+        model_name,
+    ...<3 lines>...
+        torch_dtype=torch.float16
+    )
+  File "C:\Users\tanej\anaconda3\Lib\site-packages\transformers\models\auto\auto_factory.py", line 374, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\tanej\anaconda3\Lib\site-packages\transformers\modeling_utils.py", line 4037, in from_pretrained
+    hf_quantizer, config, device_map = get_hf_quantizer(
+                                       ~~~~~~~~~~~~~~~~^
+        config, quantization_config, device_map, weights_only, user_agent
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\tanej\anaconda3\Lib\site-packages\transformers\quantizers\auto.py", line 339, in get_hf_quantizer
+    hf_quantizer.validate_environment(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        device_map=device_map,
+        ^^^^^^^^^^^^^^^^^^^^^^
+        weights_only=weights_only,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\tanej\anaconda3\Lib\site-packages\transformers\quantizers\quantizer_bnb_4bit.py", line 60, in validate_environment
+    raise ImportError(
+        f"Using `bitsandbytes` 4-bit quantization requires bitsandbytes: `pip install -U bitsandbytes>={BITSANDBYTES_MIN_VERSION}`"
+    )
+ImportError: Using `bitsandbytes` 4-bit quantization requires bitsandbytes: `pip install -U bitsandbytes>=0.46.1`
